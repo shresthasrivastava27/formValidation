@@ -17,9 +17,10 @@ export const uploadFormData = async (formData) => {
 export const fetchPostData = async() =>{
     const res = await axios({
         method: 'get',
-        baseURL: "https://codebuddy.review/",
-        url: 'post',
+        baseURL: "https://jsonplaceholder.typicode.com/todos/",
+        url: '1',
       });
     
       return res.data || {};
 } 
+
