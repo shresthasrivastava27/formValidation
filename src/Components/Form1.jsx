@@ -14,6 +14,7 @@ const Form1 = ({ nextStep, handleChange, values }) => {
         .matches(/[^A-Za-z0-9].*[^A-Za-z0-9]/, 'Must contain 2 special characters')
         .required('Required'),
     }),
+    // onSubmit
     onSubmit: (values) => {
       nextStep();
     },
